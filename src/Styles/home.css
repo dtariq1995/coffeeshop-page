@@ -16,6 +16,7 @@ html {
 body {
     margin: 0;
     font-family: Raleway;
+    min-width: 850px;
 }
 
 header {
