@@ -1,5 +1,44 @@
+@font-face {
+    font-family: Playball;
+    src: url(/src/Assets/Fonts/Playball-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(/src/Assets/Fonts/Raleway-VariableFont_wght.ttf);
+}
+
 html {
     background: url('/src/Assets/coffee-background.jpg') no-repeat center fixed;
     background-size: cover;
 }
 
+body {
+    margin: 0;
+    font-family: Raleway;
+}
+
+header {
+    background-color: rgba(21, 21, 21, 0.771);
+    margin: 0;
+    height: 18em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav {
+    display: flex;
+    gap: 35px;
+    font-size: 22px;
+    letter-spacing: 2px;
+    
+}
+
+ #title {
+    font-family: Playball;
+    font-size: 90px;
+    color: white;
+ }
