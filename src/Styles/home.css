@@ -40,7 +40,7 @@ header {
 
 #nav {
     display: flex;
-    gap: 35px;
+    gap: 80px;
     font-size: 22px;
     letter-spacing: 2px;
 }
