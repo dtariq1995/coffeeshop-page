@@ -1,10 +1,12 @@
 const homeLoad = function() {
 
-    let header = document.querySelector("header");
+    let main = document.querySelector("#main-content");
+
+    main.innerHTML = "";
 
     let homeContent = document.createElement("div");  // home content
     homeContent.id = "home";
-    header.insertAdjacentElement('afterend', homeContent);
+    main.appendChild(homeContent);
 
     let homeText = document.createElement("div");
     homeText.classList.add("homeText");
