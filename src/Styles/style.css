@@ -70,8 +70,8 @@ header {
 
 #home {
     background-color: rgba(21, 21, 21, 0.776);
-    width: 50%;
     height: 35em;
+    width: 60vw;
     max-width: 700px;
     min-width: 500px;
     display: flex;
@@ -122,4 +122,40 @@ header {
 
  footer a:hover {
     color: gray;
+ }
+
+ #contact-body {
+    font-size: 18px;
+    background-color: rgba(21, 21, 21, 0.776);
+    width: 60vw;
+    height: 30em;
+    max-width: 800px;
+    min-width: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgb(55, 54, 54);
+    padding-bottom: 20px;
+
+ }
+
+ #contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    margin-top: 15px;
+    gap: 50px;
+ }
+
+ .contact-area {
+    display: flex;
+    align-items: center;
+ }
+
+ .contact-area img {
+    height: 36px;
+    width: 36px;
+    padding-right: 10px;
  }
