@@ -1,3 +1,5 @@
+import homeLoad from "./Home";
+
 const pageLoad = function() {
 
 
@@ -10,47 +12,22 @@ const pageLoad = function() {
     let nav = document.createElement("div");
     nav.id = "nav";
 
-    let navHome = document.createElement("div");
+    let navHome = document.createElement("button");
     navHome.textContent = "Home";
     navHome.classList.add("nav-list");
 
-    let navMenu = document.createElement("div");
+    let navMenu = document.createElement("button");
     navMenu.textContent = "Menu";
     navMenu.classList.add("nav-list");
 
-    let navContact = document.createElement("div");
-    navContact.textContent = "Contact Us";
+    let navContact = document.createElement("button");
+    navContact.textContent = "Contact";
     navContact.classList.add("nav-list");
     nav.append(navHome, navMenu, navContact);
 
     title.textContent = "Café l’Espérance";
     content.appendChild(header);
     header.append(title, nav);
-
-
-    let homeContent = document.createElement("div");  // home content
-    homeContent.id = "home";
-    content.appendChild(homeContent);
-
-    let homeText = document.createElement("div");
-    homeText.classList.add("homeText");
-    homeText.textContent = "Experience France's Greatest Coffee";
-
-    let homeTextTwo = document.createElement("div");
-    homeTextTwo.classList.add("homeText");
-    homeTextTwo.textContent = "Serving Delicious Coffee Since 1995";
-
-    let homeImg = document.createElement("img");
-    homeImg.src = "/src/Assets/coffee-profile2.jpg";
-
-    let homeTextThree = document.createElement("div");
-    homeTextThree.classList.add("homeText");
-    homeTextThree.textContent = "Order Online Or Visit Us Today";
-
-
-    homeContent.append(homeText, homeTextTwo, homeImg, homeTextThree);
-
-
 
 
     let footer = document.createElement("footer");  // footer content
