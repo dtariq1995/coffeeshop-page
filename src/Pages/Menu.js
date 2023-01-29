@@ -51,13 +51,7 @@ const menuLoad = function() {
     let itemSixText = document.createElement("div");
     itemSix.append(itemSixImage, itemSixText);
 
-    let itemSeven = document.createElement("div");
-    let itemSevenImage = document.createElement("img");
-    itemSevenImage.src = "/src/Assets/menu-8.jpg";
-    let itemSevenText = document.createElement("div");
-    itemSeven.append(itemSevenImage, itemSevenText);
-
-    coffeeMenu.append(itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix, itemSeven);
+    coffeeMenu.append(itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix);
 
     menu.append(coffeeTitle, coffeeMenu);
 
