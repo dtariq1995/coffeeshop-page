@@ -168,9 +168,14 @@ header {
     min-width: 550px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-direction: column;
     border-radius: 5px;
     border: 1px solid rgb(55, 54, 54);
     padding-bottom: 20px;
+ }
+
+ .menu-title {
+    font-size: 28px;
+    font-family: Playball;
  }
