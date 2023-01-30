@@ -17,17 +17,32 @@ const pageLoad = function() {
     let navHome = document.createElement("button");
     navHome.textContent = "Home";
     navHome.classList.add("nav-list");
-    navHome.addEventListener("click", homeLoad);
+    setActiveButton(navHome);
+    navHome.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(navHome);
+        homeLoad();
+    });
 
     let navMenu = document.createElement("button");
     navMenu.textContent = "Menu";
     navMenu.classList.add("nav-list");
-    navMenu.addEventListener("click", menuLoad);
+    navMenu.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(navMenu);
+        menuLoad();
+    });
 
     let navContact = document.createElement("button");
     navContact.textContent = "Contact";
     navContact.classList.add("nav-list");
-    navContact.addEventListener("click", contactLoad);
+    navContact.addEventListener("click", (e) => {
+        if (e.target.classList.contains("active")) return;
+        setActiveButton(navContact);
+        contactLoad();
+    });
+
+
     nav.append(navHome, navMenu, navContact);
 
     title.textContent = "Café l’Espérance";
@@ -53,6 +68,19 @@ const pageLoad = function() {
     content.appendChild(footer);
     footer.append(footerText, footerImg, footerLink);
 }
+
+function setActiveButton(button) {
+    const buttons = document.querySelectorAll(".nav-list");
+  
+    buttons.forEach((button) => {
+      if (button !== this) {
+        button.classList.remove("active");
+      }
+    });
+  
+    button.classList.add("active");
+}
+  
 
 export default pageLoad;
 

@@ -52,15 +52,22 @@ header {
     background-color: rgba(147, 147, 147, 0);
     border: none;
     height: 60px;
-    width: 180px;
+    width: 140px;
     justify-content: center;
     padding-top: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
 }
 
 .nav-list:hover {
     border-bottom: 2px solid white;
     height: 58px;
+    transform: translateY(-15%);
 }
+
+.nav-list.active {
+    border-bottom: 2px solid white;
+  }
 
  #title {
     font-family: Playball;
@@ -81,6 +88,7 @@ header {
     border-radius: 5px;
     padding: 15px 0px;
     border: 1px solid rgb(55, 54, 54);
+    animation: fadeIn 1.5s;
 }
 
 .homeText {
@@ -129,8 +137,8 @@ header {
     background-color: rgba(21, 21, 21, 0.776);
     width: 60vw;
     height: 30em;
-    max-width: 800px;
-    min-width: 550px;
+    max-width: 600px;
+    min-width: 500px;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -138,6 +146,7 @@ header {
     border-radius: 5px;
     border: 1px solid rgb(55, 54, 54);
     padding-bottom: 20px;
+    animation: fadeIn 1.5s;
  }
 
  #contact-info {
@@ -163,31 +172,53 @@ header {
     font-size: 18px;
     background-color: rgba(21, 21, 21, 0.776);
     width: 60vw;
-    height: 30em;
-    max-width: 800px;
-    min-width: 550px;
+    padding: 40px 0px;
+    max-width: 675px;
+    min-width: 575px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
     flex-direction: column;
     border-radius: 5px;
     border: 1px solid rgb(55, 54, 54);
-    padding-bottom: 20px;
+    animation: fadeIn 1.5s;
  }
 
  .menu-title {
-    font-size: 28px;
+    font-size: 38px;
     font-family: Playball;
+    padding-bottom: 40px;
  }
 
  #menu img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    opacity: 90%;
+    border: 5px solid rgb(67, 33, 10);
  }
 
  #coffee-menu {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
- }
+    gap: 50px 80px;    
+}
+
+.menu-text {
+    font-family: Raleway;
+    font-size: 16px;
+    padding: 30px 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }

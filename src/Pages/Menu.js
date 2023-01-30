@@ -10,7 +10,7 @@ const menuLoad = function() {
 
     let coffeeTitle = document.createElement("div");
     coffeeTitle.classList.add("menu-title");
-    coffeeTitle.textContent = "Coffee";
+    coffeeTitle.textContent = "Drink Menu";
 
     let coffeeMenu = document.createElement("div");
     coffeeMenu.id = "coffee-menu";
@@ -53,7 +53,11 @@ const menuLoad = function() {
 
     coffeeMenu.append(itemOne, itemTwo, itemThree, itemFour, itemFive, itemSix);
 
-    menu.append(coffeeTitle, coffeeMenu);
+    let coffeeText = document.createElement("div");
+    coffeeText.classList.add("menu-text");
+    coffeeText.textContent= "Items are fully customizable and made to order. We carry a large variety of locally crafted syrups and sweeteners! Come give them a try today!";
+
+    menu.append(coffeeTitle, coffeeMenu, coffeeText);
 
 
 }
