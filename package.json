@@ -15,7 +15,7 @@
   "bugs": {
     "url": "https://github.com/dtariq1995/restaurant-page/issues"
   },
-  "homepage": "https://github.com/dtariq1995/restaurant-page#readme",
+  "homepage": "https://github.com/dtariq1995/restaurant-page",
   "devDependencies": {
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1"
