@@ -222,3 +222,16 @@ header {
       opacity: 1;
     }
   }
+
+@media (max-width: 575px) {
+    
+    #title {
+        font-size: 60px;
+    }
+
+    #coffee-menu {
+        grid-template-columns: 1fr;
+        gap: 50px 80px;    
+    }
+
+}
