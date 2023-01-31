@@ -17,37 +17,37 @@ const menuLoad = function() {
 
     let itemOne = document.createElement("div");
     let itemOneImage = document.createElement("img");
-    itemOneImage.src = "/dist/Assets/menu-2.jpg";
+    itemOneImage.src = "Assets/menu-2.jpg";
     let itemOneText = document.createElement("div");
     itemOne.append(itemOneImage, itemOneText);
 
     let itemTwo = document.createElement("div");
     let itemTwoImage = document.createElement("img");
-    itemTwoImage.src = "/dist/Assets/menu-3.jpg";
+    itemTwoImage.src = "Assets/menu-3.jpg";
     let itemTwoText = document.createElement("div");
     itemTwo.append(itemTwoImage, itemTwoText);
 
     let itemThree = document.createElement("div");
     let itemThreeImage = document.createElement("img");
-    itemThreeImage.src = "/dist/Assets/menu-4.jpg";
+    itemThreeImage.src = "Assets/menu-4.jpg";
     let itemThreeText = document.createElement("div");
     itemThree.append(itemThreeImage, itemThreeText);
 
     let itemFour = document.createElement("div");
     let itemFourImage = document.createElement("img");
-    itemFourImage.src = "/dist/Assets/menu-5.jpg";
+    itemFourImage.src = "Assets/menu-5.jpg";
     let itemFourText = document.createElement("div");
     itemFour.append(itemFourImage, itemFourText);
 
     let itemFive = document.createElement("div");
     let itemFiveImage = document.createElement("img");
-    itemFiveImage.src = "/dist/Assets/menu-6.jpg";
+    itemFiveImage.src = "Assets/menu-6.jpg";
     let itemFiveText = document.createElement("div");
     itemFive.append(itemFiveImage, itemFiveText);
 
     let itemSix = document.createElement("div");
     let itemSixImage = document.createElement("img");
-    itemSixImage.src = "/dist/Assets/menu-7.jpg";
+    itemSixImage.src = "Assets/menu-7.jpg";
     let itemSixText = document.createElement("div");
     itemSix.append(itemSixImage, itemSixText);
 

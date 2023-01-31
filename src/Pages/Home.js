@@ -17,7 +17,7 @@ const homeLoad = function() {
     homeTextTwo.textContent = "Serving Delicious Coffee Since 1995";
 
     let homeImg = document.createElement("img");
-    homeImg.src = "/dist/Assets/coffee-profile2.jpg";
+    homeImg.src = "Assets/coffee-profile2.jpg";
 
     let homeTextThree = document.createElement("div");
     homeTextThree.classList.add("homeText");
