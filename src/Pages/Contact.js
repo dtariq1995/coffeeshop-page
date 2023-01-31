@@ -14,7 +14,7 @@ const contactLoad = function() {
     let phoneArea = document.createElement("div");
     phoneArea.classList.add("contact-area");
     let phoneIcon = document.createElement("img");
-    phoneIcon.src = "Assets/phone.png";
+    phoneIcon.src = "/Assets/phone.png";
     let phoneText = document.createElement("div");
     phoneText.innerText = "+33 1 47 34 16 98";
     phoneArea.append(phoneIcon, phoneText);
@@ -23,7 +23,7 @@ const contactLoad = function() {
     let addressArea = document.createElement("div");
     addressArea.classList.add("contact-area");
     let addressIcon = document.createElement("img");
-    addressIcon.src = "Assets/address.png";
+    addressIcon.src = "/Assets/address.png";
     let addressText = document.createElement("div");
     addressText.innerText = "Champ de Mars, 5 Av. Anatole, Paris, France";
     addressArea.append(addressIcon, addressText);
