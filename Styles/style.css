@@ -1,0 +1,224 @@
+@font-face {
+    font-family: Playball;
+    src: url(/dist/Assets/Fonts/Playball-Regular.ttf);
+}
+
+@font-face {
+    font-family: Raleway;
+    src: url(/dist/Assets/Fonts/Raleway-VariableFont_wght.ttf);
+}
+
+html {
+    background: url('/dist/Assets/coffee-background.jpg') no-repeat center fixed;
+    background-size: cover;
+}
+
+body {
+    margin: 0;
+    font-family: Raleway;
+    color: white;
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 100vh;
+}
+
+header {
+    background-color: rgba(21, 21, 21, 0.771);
+    margin: 0;
+    height: 15em;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#nav {
+    display: flex;
+
+}
+
+.nav-list {
+    font-size: 20px;
+    font-family: Raleway;
+    letter-spacing: 2px;
+    color: white;
+    display: flex;
+    background-color: rgba(147, 147, 147, 0);
+    border: none;
+    height: 60px;
+    width: 140px;
+    justify-content: center;
+    padding-top: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.nav-list:hover {
+    border-bottom: 2px solid white;
+    height: 58px;
+    transform: translateY(-15%);
+}
+
+.nav-list.active {
+    border-bottom: 2px solid white;
+  }
+
+ #title {
+    font-family: Playball;
+    font-size: 90px;
+ }
+
+
+#home {
+    background-color: rgba(21, 21, 21, 0.776);
+    height: 35em;
+    width: 60vw;
+    max-width: 700px;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    padding: 15px 0px;
+    border: 1px solid rgb(55, 54, 54);
+    animation: fadeIn 1.5s;
+}
+
+.homeText {
+    font-size: 20px;
+}
+
+#home img {
+    width: 275px;
+    height: 275px;
+    border-radius: 50%;
+    border: solid;
+    border-color: rgb(147, 147, 147);
+}
+
+ footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(21, 21, 21, 0.771);
+    margin: 0;
+    height: 3.5em;
+    gap: 10px;
+    width: 100vw;
+ }
+
+ footer img {
+    height: 24px;
+    width: 24px;
+ }
+
+ footer p {
+    margin: 0;
+ }
+
+ footer a {
+    color: white;
+    text-decoration: none;
+ }
+
+ footer a:hover {
+    color: gray;
+ }
+
+ #contact-body {
+    font-size: 18px;
+    background-color: rgba(21, 21, 21, 0.776);
+    width: 60vw;
+    height: 30em;
+    max-width: 600px;
+    min-width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgb(55, 54, 54);
+    padding-bottom: 20px;
+    animation: fadeIn 1.5s;
+ }
+
+ #contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: space-around;
+    margin-top: 15px;
+    gap: 50px;
+ }
+
+ .contact-area {
+    display: flex;
+    align-items: center;
+ }
+
+ .contact-area img {
+    height: 36px;
+    width: 36px;
+    padding-right: 10px;
+ }
+
+ #menu {
+    font-size: 18px;
+    background-color: rgba(21, 21, 21, 0.776);
+    width: 60vw;
+    padding: 40px 0px;
+    max-width: 675px;
+    min-width: 575px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgb(55, 54, 54);
+    animation: fadeIn 1.5s;
+ }
+
+ .menu-title {
+    font-size: 38px;
+    font-family: Playball;
+    padding-bottom: 40px;
+ }
+
+ #menu img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    opacity: 90%;
+    border: 5px solid rgb(67, 33, 10);
+ }
+
+ #coffee-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px 80px;    
+}
+
+.menu-text {
+    font-family: Raleway;
+    font-size: 16px;
+    padding: 30px 15px;
+    text-align: center;
+    line-height: 1.5;
+}
+
+/* Animations */
+
+@keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
