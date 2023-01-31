@@ -61,7 +61,7 @@ const pageLoad = function() {
     let footerImg = document.createElement("img");
 
     footerText.textContent = "Created by:";
-    footerImg.src = "/src/Assets/GitHub-Mark-Light-32px.png";
+    footerImg.src = "/dist/Assets/GitHub-Mark-Light-32px.png";
     footerLink.href = "https://github.com/dtariq1995";
     footerLink.textContent = "Daanyaal Tariq";
 

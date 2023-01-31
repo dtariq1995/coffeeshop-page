@@ -1,15 +1,15 @@
 @font-face {
     font-family: Playball;
-    src: url(/src/Assets/Fonts/Playball-Regular.ttf);
+    src: url(/dist/Assets/Fonts/Playball-Regular.ttf);
 }
 
 @font-face {
     font-family: Raleway;
-    src: url(/src/Assets/Fonts/Raleway-VariableFont_wght.ttf);
+    src: url(/dist/Assets/Fonts/Raleway-VariableFont_wght.ttf);
 }
 
 html {
-    background: url('/src/Assets/coffee-background.jpg') no-repeat center fixed;
+    background: url('/dist/Assets/coffee-background.jpg') no-repeat center fixed;
     background-size: cover;
 }
 
